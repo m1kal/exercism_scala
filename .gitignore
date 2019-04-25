@@ -1,0 +1,9 @@
+test
+target
+project
+*.json
+build.sbt
+README.md
+*.sw?
+*~
+
