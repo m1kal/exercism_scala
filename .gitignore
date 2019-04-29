@@ -6,4 +6,5 @@ build.sbt
 README.md
 *.sw?
 *~
+.keep
 
