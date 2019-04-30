@@ -1,10 +1,9 @@
 class Accumulate {
   def accumulate[A, B](f: (A) => B, list : List[A]): List[B] = {
-    var out : List[B] = List()
-    for (elem <- list) {
-      out = out :+ f(elem)
+    list match {
+      case Nil => List()
+      case elem :: rest => f(elem) :: accumulate(f, rest)
     }
-   out
   }
 }
 
